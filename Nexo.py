@@ -26,6 +26,7 @@ try:
 except ImportError:
     print(f"{Fore.LIGHTMAGENTA_EX}[ {Fore.LIGHTBLACK_EX}+ {Fore.LIGHTMAGENTA_EX}] {Fore.LIGHTBLACK_EX} Installing the missing modules")
     subprocess.check_call([sys.executable, "-m", "pip", "install", "colorama"])
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "pycryptodome"])
     print(f"{Fore.LIGHTMAGENTA_EX}[ {Fore.LIGHTBLACK_EX}+ {Fore.LIGHTMAGENTA_EX}] {Fore.LIGHTBLACK_EX} All modules installed")
     sys.exit()
 
